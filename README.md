@@ -23,5 +23,12 @@ npm run build
 npm run lint
 ```
 
+### Install Vuetify
+```
+vue add vuetify
+```
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
