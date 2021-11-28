@@ -2,7 +2,17 @@
 # 190906
 
 # Screenshot Vuetify
-![alt text](https://github.com/FelipeLooze/DesenWeb/blob/master/Vuetify.png)
+## Painel
+![alt text](https://github.com/FelipeLooze/DesenWeb/blob/master/Painel.png)
+
+## Images
+![alt text](https://github.com/FelipeLooze/DesenWeb/blob/master/Images.png)
+
+## Sobre
+![alt text](https://github.com/FelipeLooze/DesenWeb/blob/master/Sobre.png)
+
+## Cards
+![alt text](https://github.com/FelipeLooze/DesenWeb/blob/master/Cards.png)
 
 # projeto
 
