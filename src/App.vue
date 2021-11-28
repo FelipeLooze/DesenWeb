@@ -1,5 +1,6 @@
 <template>
   <v-app>
+
     <v-system-bar
       height="30"
       app 
@@ -22,7 +23,12 @@
       <v-divider></v-divider>
 
       <v-list dense nav>
-        <v-list-item v-for="item in items" :key="item.title" link>
+        <v-list-item 
+          v-for="item in items" 
+          :key="item.title" 
+          :to="item.to"
+          link
+        >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -37,7 +43,7 @@
     <v-app-bar
       app
       color="primary"
-      dark
+      light-blue
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <div class="d-flex align-center">
@@ -58,22 +64,33 @@
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
           width="100"
         />
+
       </div>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+      <v-btn>
+        <span>Painel</span>
+        <v-icon>mdi-view-dashboard</v-icon>
+      </v-btn>
+
+      <v-btn>
+        <span>Images</span>
+        <v-icon>mdi-image</v-icon>
+      </v-btn>
+      <v-btn>
+        <span>Sobre</span>
+        <v-icon>mdi-domain</v-icon>
+      </v-btn>
+      
+      <v-btn>
+        <span>Cards</span>
+        <v-icon>mdi-help-box</v-icon>
       </v-btn>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <router-view/>
     </v-main>
 
     <v-footer
@@ -128,22 +145,16 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
 export default {
   name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
   data () {
     return {
       drawer: false,
       items: [
-        {title: 'Painel', icon: 'mdi-view-dashboard'},
-        {title: 'Imagens', icon: 'mdi-image'},
-        {title: 'Sobre', icon: 'mdi-help-box'},
+        {title: 'Painel', icon: 'mdi-view-dashboard', to:'/'},
+        {title: 'Imagens', icon: 'mdi-image', to:'/images'},
+        {title: 'Sobre', icon: 'mdi-domain', to:'/about'},
+        {title: 'Cards', icon: 'mdi-help-box', to:'/card'},
       ],
       right: null,
     }
