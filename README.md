@@ -3,7 +3,7 @@
 
 # Screenshot Vuetify screens:
 ## Painel
-![alt text](https://github.com/FelipeLooze/DesenWeb/blob/master/Painel.png)
+![alt text](https://github.com/FelipeLooze/DesenWeb/blob/master/NovoPainel.png)
 
 ## Images
 ![alt text](https://github.com/FelipeLooze/DesenWeb/blob/master/Images.png)
