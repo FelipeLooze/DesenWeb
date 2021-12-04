@@ -5,24 +5,28 @@
   >
     {{MyCard}}
     <v-img
-      src="../assets/hp1.jpg"
+      src="../assets/coin.jpg"
       height="200px"
     ></v-img>
 
     <v-card-title>
-      {{cardTitle}}
+      {{cardCode}}
     </v-card-title>
 
     <v-card-subtitle>
-      {{cardSubtitle}}
+      {{cardDescription}}
     </v-card-subtitle>
+
+    <v-card-text>
+      {{cardRate}}
+    </v-card-text>
 
     <v-card-actions>
       <v-btn
         color="orange lighten-2"
         text
       >
-        Explore
+        Show More
       </v-btn>
 
       <v-spacer></v-spacer>
@@ -38,8 +42,9 @@
     <v-expand-transition>
       <div v-show="show">
         <v-divider></v-divider>
-
-        {{cardDescription}}
+        Float Rate: {{cardFloat}} 
+        <v-divider></v-divider>
+        Symbol: {{cardSymbol}}
       </div>
     </v-expand-transition>
   </v-card>
@@ -48,9 +53,10 @@
 
 <script>
   export default {
-    props:['cardid', 'cardTitle', 'cardDescription', 'cardSubtitle'],
+    props:['cardid', 'cardCode', 'cardSymbol', 'cardDescription', 'cardRate', 'cardFloat'],
     data: () => ({
       show: false,
     }),
   }
 </script>
+

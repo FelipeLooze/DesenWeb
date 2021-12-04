@@ -2,6 +2,10 @@
 # 190906
 
 # Screenshot Vuetify screens:
+
+## AF3 - 'Coin Rate' Page
+![alt text]()
+
 ## Painel
 ![alt text](https://github.com/FelipeLooze/DesenWeb/blob/master/NovoPainel.png)
 

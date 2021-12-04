@@ -84,8 +84,8 @@
       </v-btn>
       
       <v-btn>
-        <span>Cards</span>
-        <v-icon>mdi-help-box</v-icon>
+        <span>Coins</span>
+        <v-icon>mdi-bitcoin</v-icon>
       </v-btn>
     </v-app-bar>
 
@@ -145,6 +145,11 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
 export default {
   name: 'App',
   data () {
@@ -154,7 +159,7 @@ export default {
         {title: 'Painel', icon: 'mdi-view-dashboard', to:'/'},
         {title: 'Imagens', icon: 'mdi-image', to:'/images'},
         {title: 'Sobre', icon: 'mdi-domain', to:'/about'},
-        {title: 'Cards', icon: 'mdi-help-box', to:'/card'},
+        {title: 'Coins', icon: 'mdi-bitcoin', to:'/card'},
       ],
       right: null,
     }
